@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y apache2 zip unzip wget
 WORKDIR /var/www/html
 
 # Download and extract the template
-RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page287/eflyer.zip
+RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
 RUN unzip eflyer.zip
 RUN cp -rvf eflyer/* .
 RUN rm -rf eflyer eflyer.zip
@@ -17,4 +17,3 @@ CMD ["apache2ctl", "-D", "FOREGROUND"]
 
 # Expose port 80
 EXPOSE 80
-
