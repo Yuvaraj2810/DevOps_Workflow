@@ -8,9 +8,9 @@ WORKDIR /var/www/html
 
 # Download and extract the template
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
-RUN unzip eflyer.zip
-RUN cp -rvf eflyer/* .
-RUN rm -rf eflyer eflyer.zip
+RUN sudo unzip oxer.zip
+RUN sudo cp -rvf oxer/* .
+RUN sudo rm -rf oxer.zip
 
 # Start Apache in the foreground
 CMD ["apache2ctl", "-D", "FOREGROUND"]
