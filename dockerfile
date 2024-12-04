@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 # Update and install required packages
-RUN apt-get update && apt-get install -y zip unzip wget
+RUN apt-get update && apt-get install -y apache2 zip unzip wget
 
 # Set the working directory
 WORKDIR /var/www/html
